@@ -1,0 +1,22 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}
+  Error 404
+{% endblock %}
+
+{% block body %}
+
+    <h3 class="heading">#404</h3>
+
+    {% if succ_message %}
+        <div class="msg-success">{{ succ_message }}</div>
+    {% endif %}
+    
+    {% if message %}
+        <div class="msg-error">{{ message }}</div>
+    {% endif %}
+    <div class="form__container--auth">
+        <h1 class="heading">Recurso no encontrado</h1>
+    </div>
+    
+{% endblock %}

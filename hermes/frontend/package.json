@@ -1,0 +1,19 @@
+{
+  "name": "hermes_v2",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:watch": "vite build --watch"
+  },
+  "author": "Martin del Pino",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "vite-plugin-static-copy": "^3.1.2"
+  }
+}

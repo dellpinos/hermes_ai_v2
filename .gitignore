@@ -1,0 +1,17 @@
+venv
+/hermes/frontend/node_modules
+
+__pycache__/
+*.pyc
+*.sqlite3
+.vscode
+
+staticfiles
+/hermes/frontend/static/dist
+
+/hermes/llm/model_files/bin
+/hermes/llm/model_files/rag/vectorstores
+
+.env
+
+.github

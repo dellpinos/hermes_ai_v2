@@ -1,0 +1,37 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}
+Chat
+{% endblock %}
+
+{% block body %}
+
+<h3 class="heading">HomePage</h3>
+
+{% if succ_message %}
+<div class="msg-success">{{ succ_message }}</div>
+{% endif %}
+
+{% if message %}
+<div class="msg-error">{{ message }}</div>
+{% endif %}
+
+<h1>HomePage Alma AI</h1>
+<!-- <div class="chat">
+    <div class="chat__wrapper">
+        <div class="chat__msgs" id="chat-messages">
+
+            <div class="chat__msg-wrapper chat__msg-wrapper--ai">
+                <p class="chat__msg chat__msg--ai">
+                    Hola! Mi nombre es Alma, en que puedo ayudarte?
+                </p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <textarea id="chat-input-box" placeholder="Escribe tu mensaje..."></textarea>
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+</div> -->
+
+{% endblock %}
