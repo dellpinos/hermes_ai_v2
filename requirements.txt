@@ -32,7 +32,10 @@ langchain-core==0.3.76
 langchain-huggingface==0.3.1
 langchain-text-splitters==0.3.11
 langsmith==0.4.31
-llama_cpp_python==0.3.16
+# Para Mac (tu máquina local)
+llama_cpp_python==0.3.16 ; sys_platform == "darwin"
+# Para DOMCloud (Linux aarch64)
+llama_cpp_python @ https://abetlen.github.io/llama-cpp-python/whl/cpu/llama_cpp_python-0.3.16-cp311-cp311-manylinux2014_aarch64.whl ; sys_platform == "linux"
 MarkupSafe==3.0.2
 marshmallow==3.26.1
 multidict==6.6.4
