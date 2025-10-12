@@ -115,7 +115,7 @@ LOGIN_REDIRECT_URL = '/chat/'
 STATIC_URL = '/static/' # Este es parte del SRC en las etiquetas HTML tanto en dev como con el build
 
 # Production
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / '../staticfiles'
 
 # Static files, this changes becaouse in dev there aren't "dist"
 if config('DJANGO_VITE_DEV_MODE', default=True, cast=bool):
